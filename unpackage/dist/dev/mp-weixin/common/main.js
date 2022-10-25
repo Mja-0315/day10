@@ -20,7 +20,7 @@ var _requestMiniprogram = __webpack_require__(/*! @escook/request-miniprogram */
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 
 // 引入请求基地址
-_requestMiniprogram.$http.baseUrl = 'https://api-hmugo-web.itheima.net/api/public/v1/';
+_requestMiniprogram.$http.baseUrl = 'https://api.it120.cc/hjl/';
 // 设置请求拦截器，在请求数据还没结束时提示用户加载中
 _requestMiniprogram.$http.beforeRequest = function () {
   uni.showLoading({

@@ -9,7 +9,7 @@ import {
 	$http
 } from "@escook/request-miniprogram"
 // 引入请求基地址
-$http.baseUrl = 'https://api-hmugo-web.itheima.net/api/public/v1/'
+$http.baseUrl = 'https://api.it120.cc/hjl/'
 // 设置请求拦截器，在请求数据还没结束时提示用户加载中
 $http.beforeRequest = function() {
 	uni.showLoading({

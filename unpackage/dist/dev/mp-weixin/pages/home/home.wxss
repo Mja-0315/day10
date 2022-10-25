@@ -1,21 +1,114 @@
 @charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
+._nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+._nav ._h1 {
+  font-weight: 700;
+  font-size: 40rpx;
+}
+._nav input {
+  background-color: #f7f8fa;
+  border: 1px solid #fff;
+  width: 480rpx;
+  height: 60rpx;
+  border-radius: 16rpx;
+}
+.ul1 {
+  width: 88%;
+  margin: auto;
+  height: 360rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30rpx;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.ul1 ._li {
+  width: 20%;
+  text-align: center;
+  font-weight: 700;
+}
 swiper {
   width: 100%;
   height: 400rpx;
 }
 swiper ._img {
   width: 100%;
-  height: 400rpx;
+  height: 100%;
 }
-._ul {
+._aside {
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+}
+._aside ._h1 {
+  font-weight: 700;
+  font-size: 40rpx;
+}
+._aside ._h1 ._span {
+  color: #ef8988;
+}
+._aside ._p {
+  color: orange;
+}
+._article {
+  background-color: #fff;
+  padding: 30rpx;
+}
+._article ._h1 {
+  font-size: 40rpx;
+  font-weight: 700;
+  text-align: center;
+}
+._article ._ul {
   display: flex;
   justify-content: space-between;
-  padding: 20rpx;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
 }
-._ul ._img {
-  width: 160rpx;
-  height: 160rpx;
+._article ._ul ._li {
+  width: 48%;
+  height: 540rpx;
+  border: 2px solid #ccc;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+._article ._ul ._li ._img {
+  width: 100%;
+  height: 65%;
+}
+._article ._ul ._li ._h1 {
+  font-size: 30rpx;
+  text-align: left;
+  padding-left: 20rpx;
+}
+._article ._ul ._li ._p {
+  color: #999;
+  font-size: 24rpx;
+  margin: 10rpx 0;
+  padding-left: 20rpx;
+}
+._article ._ul ._li ._h2 {
+  font-weight: 700;
+  font-size: 36rpx;
+  color: #f10429;
+  padding-left: 20rpx;
+}
+._article ._ul ._li ._h2 ._span {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  font-style: initial;
 }
 
