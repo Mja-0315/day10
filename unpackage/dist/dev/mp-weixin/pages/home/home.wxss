@@ -83,25 +83,26 @@ swiper ._img {
   border: 2px solid #ccc;
   border-radius: 10rpx;
   margin-bottom: 20rpx;
+  overflow: hidden;
 }
 ._article ._ul ._li ._img {
   width: 100%;
-  height: 65%;
+  height: 60%;
 }
 ._article ._ul ._li ._h1 {
-  font-size: 30rpx;
+  font-size: 28rpx;
   text-align: left;
   padding-left: 20rpx;
 }
 ._article ._ul ._li ._p {
   color: #999;
   font-size: 24rpx;
-  margin: 10rpx 0;
+  margin: 6rpx 0;
   padding-left: 20rpx;
 }
 ._article ._ul ._li ._h2 {
   font-weight: 700;
-  font-size: 36rpx;
+  font-size: 32rpx;
   color: #f10429;
   padding-left: 20rpx;
 }
@@ -109,6 +110,6 @@ swiper ._img {
   color: #999;
   font-size: 24rpx;
   margin-left: 10rpx;
-  font-style: initial;
+  text-decoration: line-through;
 }
 

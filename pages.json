@@ -2,31 +2,52 @@
 	"pages": [{
 		"path": "pages/home/home",
 		"style": {
-			"navigationBarTitleText": "",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/cate/cate",
 		"style": {
-			"navigationBarTitleText": "",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/cart/cart",
 		"style": {
-			"navigationBarTitleText": "",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/my/my",
 		"style": {
-			"navigationBarTitleText": "",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
+	}],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
+
+			{
+				"path": "search_list/search_list",
+				"style": {
+					"navigationBarTitleText": "商品列表",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "search_history/search_history",
+				"style": {
+					"navigationBarTitleText": "搜一搜",
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
 	}],
 	"tabBar": {
 		"list": [{

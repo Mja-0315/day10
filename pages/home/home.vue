@@ -1,6 +1,6 @@
 <template>
 	<view style="margin-bottom: 200rpx;">
-		<nav>
+		<nav @click="goSearchList">
 			<h1>天使童装</h1><input type="text" placeholder="输入关键字搜索">
 		</nav>
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
@@ -63,6 +63,11 @@
 				} = await uni.$http.post('shop/goods/list/v2')
 				console.log(res);
 				this.list = res.data
+			},
+			goSearchList() {
+				uni.navigateTo({
+					url: '/subpkg/search_history/search_history'
+				})
 			}
 		},
 		mounted() {
@@ -167,14 +172,15 @@
 				border: 2px solid #ccc;
 				border-radius: 10rpx;
 				margin-bottom: 20rpx;
+				overflow: hidden;
 
 				img {
 					width: 100%;
-					height: 65%;
+					height: 60%;
 				}
 
 				h1 {
-					font-size: 30rpx;
+					font-size: 28rpx;
 					text-align: left;
 					padding-left: 20rpx;
 
@@ -183,13 +189,13 @@
 				p {
 					color: #999;
 					font-size: 24rpx;
-					margin: 10rpx 0;
+					margin: 6rpx 0;
 					padding-left: 20rpx;
 				}
 
 				h2 {
 					font-weight: 700;
-					font-size: 36rpx;
+					font-size: 32rpx;
 					color: #f10429;
 					padding-left: 20rpx;
 
@@ -197,7 +203,7 @@
 						color: #999;
 						font-size: 24rpx;
 						margin-left: 10rpx;
-						font-style: initial;
+						text-decoration: line-through;
 					}
 				}
 			}
